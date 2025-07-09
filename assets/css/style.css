@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    outline: none;
+    border: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo h1{
+    margin: 5px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    font-size: 35px;
+}
+.logo span {
+    color: #D24545;
+}
+
+.wrap-landingpage {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.wrap-landingpage img {
+    width: 330px;
+    margin-left: 70px;
+    filter: drop-shadow(3px 3px 5px black);
+}
+.wrap-title h1 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+.wrap-title span {
+    color: #D24545;
+}
+.wrap-title h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+.wrap-title {
+    margin: 40px;
+} 
+.main-offersection {
+    background-color: #EEEEEE;
+}
+.offer-title h1 {
+    text-align: center;
+    padding-top: 1rem;
+    font-family: "Montserrat";
+    font-size: 35px;
+}
+.offer-title p {
+    font-family: "Poppins";
+    text-align: center;
+    margin-bottom: 25px;
+}
+.wrap-card {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin: 40px;
+    padding-bottom: 50px;
+}
+.cards h1 {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+.cards p {
+    text-align: center;
+    font-size: 15px;
+    width: 270px;
+    font-family: sans-serif;
+}
+.cards img {
+    filter: drop-shadow(3px 3px 5px black);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: black;
+    padding: 10px 0px 10px 0px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    transition: 0.1s ease-in-out;
+}
+.main-contactus {
+    display: grid;
+    place-items: center;
+}
+.wrap-contactus {
+    width: 50%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.contactus-title h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+}
+.formcontactus {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 0px 20px 0px 20px;
+}
+.formcontactus input {
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Poppins";
+    transition: 0.1s ease-in-out;
+}
+.formcontactus input:hover {
+    background-color: wheat;
+}
+textarea {
+    height: 200px;
+    font-size: 15px;
+    font-family: "Poppins";
+    padding: 5px;
+    transition: 0.1s ease-in-out;
+}
+textarea:hover {
+    background-color: wheat;
+}
+.button:hover {
+    background: #D24545;
+}
+.footer {
+    bottom: 0;
+    height: 120px;
+    padding: 35px 50px 60px 50px;
+}
+.footer p {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    font-family: "Montserrat";
+    font-weight: 400 ;
+    margin: 15px;
+}
+.btn2 {
+    background: #EEEEEE;
+    margin-bottom: 40px;
+    height: 40px;
+    font-size: 20px;
+    transition: 0.1s ease-in-out;
+}
+.btn2:hover {
+    background: wheat;
+}
+.Main-adddata {
+    width: 100%;
+}
+.adddataform {
+    display: grid;
+    grid-template-columns: repeat(1.1fr);
+    place-items: center;
+    margin: 40px;
+    width: 100%;
+}
+.adddataform input {
+    width: 80%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    transition: 0.1s ease-in-out;
+}
+.adddataform input:hover {
+    background: wheat;
+}
+.wrap-adddata {
+    margin: 120px 30% 150px 30%;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    box-shadow: 5px 3px 5px 3px black;
+    background-color: black;
+}
+.adddata-title h1 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: white;
+    padding-top: 20px;
+}
+.duobutton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.duobutton a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background:white;
+    font-weight: 500;
+    font-family: "Montserrat";
+    transition: 0.1s ease-in-out;
+}
+.duobutton a:hover {
+    background: wheat;
+}
+.duobutton button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background:white;
+    font-weight: 500;
+    font-family: "Montserrat";
+    transition: 0.1s ease-in-out;
+}
+.duobutton button:hover {
+    background: wheat;
+}
+.Main-editdata {
+    width: 100%;
+}
+.Wrap-editdata {
+    margin: 120px 30% 150px 30%;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    box-shadow: 5px 3px 5px 3px black;
+    background-color: black;
+}
+.editdata-title h1 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: white;
+    padding-top: 20px;
+}
+.editdataform {
+    display: grid;
+    grid-template-columns: repeat(1.1fr);
+    place-items: center;
+    margin: 40px;
+    width: 100%;
+}
+.editdataform input {
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+label {
+    width: 80%;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    color: white;
+}
+.editdataform input:hover {
+    background: wheat;
+}
+.buttonedit button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background:white;
+    font-weight: 500;
+    font-family: "Montserrat";
+    transition: 0.2s ease-in-out;
+}
+.wrap-login {
+    width: 350px;
+    background: black;
+    margin: 150px auto;
+    border-radius: 20px;
+}
+.wrap-login form {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.inputlogin {
+    margin: 20px 5px auto;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.1s ease-in-out;
+}
+.inputlogin:hover {
+    background: wheat;
+}
+.login-title h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Montserrat";
+}
+.showpass {
+    display: flex;
+    color: white;
+    gap: 5px;
+    margin: 5px 5px 5px 5px;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.showpass input {
+    transition: 0.1s ease-in-out;
+}
+.showpass input:hover {
+    background: wheat;
+}
+.wrap-login button {
+    background: white;
+    text-align: center;
+    margin: 5px auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+.wrap-login button:hover {
+    background: wheat;
+}
+.table-customer {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 15px;
+    font-family: "Montserrat";
+}
+.table-customer table {
+    border-collapse: collapse;
+}
+.table-customer thead tr {
+    background-color: black;
+    color: #EEEEEE;
+}
+.table-customer th,.table-customer td {
+    padding: 15px;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: center;
+}
+.table-customer tbody:hover {
+    background: #E5E3D4;
+}
+.wrap-action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.editadmin a {
+    text-decoration: none;
+    background: #3D3BF3;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+}
+.editadmin a:hover {
+    background: white;
+    color: black;
+}
+.deleteadmin a {
+    text-decoration: none;
+    background: #FF2929;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    transition: 0.1s ease-in-out;
+}
+.deleteadmin a:hover {
+    background: white;
+    color: black;
+}
+
+@media screen and (min-width:1320px) and (max-width:1366px) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+@media screen and (min-width:568px) and (max-width:896px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    .table-finance {
+        margin-top: 20px;
+    }
+    .wrap-landingpage {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .wrap-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:460px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    .wrap-landingpage {
+        flex-wrap: wrap;
+    }
+    .wrap-title h1 {
+        margin-top: 0;
+        font-size: 45px;
+    }
+    .wrap-title h2 {
+        font-size: 19px;
+        line-height: 1.7;
+        width: 100%;
+    }
+    .wrap-landingpage img {
+        margin-top: 20px;
+    }
+    .wrap-card {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .offer-title p {
+        width: 250px;
+        margin: auto;
+    }
+    .wrap-card img {
+        width: 400px;
+    }
+    .cards h1 {
+        font-size: 25px;
+    }
+    .cards p {
+        width: 400px;
+        background-color: #EEEEEE;
+        font-size: 20px;
+    }
+    .button {
+        padding: 10px 0 10px 0;
+        margin: 10px 50px 10px 50px;
+    }
+    .wrap-contactus {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .Main-adddata {
+        height: 100dvh;
+    }
+    .wrap-adddata {
+        border-radius: 0;
+        width: 100%;
+        margin: 50% auto;
+    }
+    .wrap-addfinance {
+        border-radius: 0;
+        width: 100%;
+        margin: 50% auto;
+    }
+    .wrap-editfinance {
+        border-radius: 0;
+        width: 100%;
+        margin: 50% auto;
+    }
+    .Wrap-editdata {
+        border-radius: 0;
+        width: 100%;
+        margin: 50% auto;
+    }
+    .adddataform input {
+        width: 90%;
+    }
+    .wrap-login {
+        margin: 250px auto;
+    }
+    .wrap-login label {
+        font-size: 20px;
+    }
+    .wrap-login a {
+        font-size: 20px
+    }
+    .inputlogin {
+        font-size: 20px;
+    }
+    .table-customer {
+        overflow-x: auto;
+        display: flex;
+        justify-content: start;
+        scroll-behavior: smooth;
+    }
+    .content-admins h1 {
+        font-size: 20px;
+    }
+        label {
+            width: 90%;
+            margin-bottom: 5px;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            text-align: left;
+            margin-left: 5px;
+            color: white;
+}
+    .editdataform input {
+        width: 90%;
+    } 
+}
