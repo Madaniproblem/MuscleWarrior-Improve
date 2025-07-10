@@ -53,7 +53,7 @@
                 <input type="password" name="passwords" class="inputlogin" id="pass" placeholder="Enter your password">
             <div class="showpass">
                 <input type="checkbox" id="checkpass" >
-                <label for="pass">Show password ?</label>
+                <label for="pass" style="margin-top: 5px; font-size: 15px; ">Show password ?</label>
             </div>
             <button type="submit" name="login">Login</button>
         </form>

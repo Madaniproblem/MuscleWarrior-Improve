@@ -1,6 +1,6 @@
 <?php
     $iddata=$_GET ['idcustomer'];
-    include "../../admin.php";
+    include "../../../configuration/database.php";
     $takedata=mysqli_query($connection,"SELECT * FROM customer where idcustomer ='$iddata'");
     $showdata = mysqli_fetch_array($takedata);
 ?>
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../designweb/style.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
                 <label for="cname">Number phone</label>
                 <input type="text" name="numcus" id="numcus" value="<?php echo $showdata ['customerphonen']?>">
                 <div class="buttonedit">
-                    <button type="submit" class="editbutton" onclick="return confirm('Are you sure you want to edit the data ?')">Edit</button>
+                    <button type="submit"onclick="return confirm('Are you sure you want to edit the data ?')">Edit</button>
                 </div>
             </form>
         </div>

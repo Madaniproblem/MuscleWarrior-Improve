@@ -21,18 +21,17 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-auto my-2 my-lg-0 fs-5 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
                 <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Hi,<?php echo $_SESSION['username'] ?>
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-
+                <li>
+                    <a class="dropdown-item">Profile</a>
                 <li>
                     <a class="dropdown-item" id="logoutbtn" href="../admin/authadmin/logout.php" >Log out</a>
                 </li>
+                <li><hr class="dropdown-divider"></li>
             </ul>
         </li>
             </ul>
@@ -40,6 +39,5 @@
         </div>
         </nav>
 
-<script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

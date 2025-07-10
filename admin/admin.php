@@ -27,13 +27,13 @@
     <link rel="stylesheet" href="../datatable/datatables.min.css">
     <script type="text/javascript" src="../datatable/datatables.min.js"></script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
 
-<?php include "../components/adminnavigation.php"; ?>
+<?php include("../components/adminnavigation.php"); ?>
 
 <div class="table-customer">
     <table id="table-data" class="display">
@@ -41,14 +41,14 @@
             <tr>
                 <th>Num</th>
                 <th>Customer name</th>
-                <th>Customer Age</th>
+                <th>Age</th>
                 <th>Phone number</th>
-                <th>Action</th>
+                <th class="text-center">Action</th>
             </tr>
         </thead>
         <tbody>
             <?php 
-                require_once "../configuration/database.php";
+                require_once("../configuration/database.php");
                 $takedata = mysqli_query($connection,"SELECT * FROM customer");
                 $startnumber = 1;
                 while($showdata=$takedata->fetch_assoc()):
@@ -60,6 +60,7 @@
                 <td><?php echo $showdata["customerphonen"]; ?></td>
                 <td>
                     <div class="wrap-action">
+                        <a class="text-light btn btn-success text-decoration-none">Show</a>
                         <a class="text-light btn btn-primary text-decoration-none" href="admindata/customerexecute/editadmin.php?idcustomer=<?php echo $showdata['idcustomer']; ?>">edit</a>
                         <a class="deletebtn text-light btn btn-danger text-decoration-none" href="admindata/customerexecute/deleteexecute.php?idcustomer=<?php echo $showdata['idcustomer']; ?>">delete</a>
                     </div>

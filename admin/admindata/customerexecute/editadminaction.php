@@ -7,12 +7,11 @@
         $phonecus = $_POST["numcus"];
 
 
-        $editquery = mysqli_query ($connection,"UPDATE customer SET 
+        $editquery = $connection->query("UPDATE customer SET 
                         customername = '$namecus',
                         customerage = '$agecus',
-                        customerphonen = '$phonecus',
-                        WHERE idcustomer = '$idcust'
-    ");
+                        customerphonen = '$phonecus'
+                        WHERE idcustomer = '$idcust'");
         if ($editquery == true) {
             echo "<script>alert('Data has been updated'); window.location.href='../../admin.php'</script>";
         } else {

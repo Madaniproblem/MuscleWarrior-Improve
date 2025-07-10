@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php';
 
 if(isset($_POST['send'])) {
-$mail = new PHPMailer(true);
+    $mail = new PHPMailer(true);
 $full = $_POST['namapenuh'];    
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -23,11 +23,12 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
     // Atur pengirim email
-    $mail->setFrom('musclewarriorofficial@gmail.com','MuscleWarrior IT Team');
+    $mail->setFrom('musclewarriorofficial@gmail.com','Bot message');
     // Atur penerima email
     $mail->addAddress('musclewarriorofficial@gmail.com','MuscleWarrior IT Team');
+    $mail->addReplyTo($email, 'Customer');
 
-    $mail->addReplyTo('musclewarriorofficial@gmail.com', 'Information');
+
     // Isi email
     $mail->isHTML();
     // Atur subjek
@@ -38,18 +39,17 @@ try {
     <h4>Email       : '.$email.'</h4>
     <h4>Message     : '.$message.'</h4>';
     // Atur versi text untuk email
-    $mail->AltBody = 'Halo ini adalah email yang dikirim dengan plain text';
 
     // Kirim email kita
     if($mail->send()) {
         $_SESSION['pesan'] = "Thanks for your message 😁🙏";
         header("Location : {$_SERVER["HTTP_REFERER"]}");
-        exit(0);
+        exit();
     }
     else {
         $_SESSION['pesan'] = "Message Error: {$mail->ErrorInfo}";
         header('Location : ../index.php');
-        exit(0);
+        exit();
     }
     
 
@@ -60,7 +60,7 @@ try {
 }
 else {
     header('Location : ../index.php');
-    exit(0);
+    exit();
 }
 
 

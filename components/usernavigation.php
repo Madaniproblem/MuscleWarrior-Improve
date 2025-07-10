@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-auto my-2 my-lg-0 fs-5 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-light aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#About-us">About Us</a>
+                    <a class="nav-link text-light" href="#About-us">About Us</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Offer">Offer</a>
+                    <a class="nav-link text-light" href="#Offer">Offer</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Contact-us">Contact Us</a>
+                    <a class="nav-link text-light" href="#Contact-us">Contact Us</a>
                 </li>
             </ul>
             </div>

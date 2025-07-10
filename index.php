@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>MuscleWarrior</title>
 </head>
 <body>
@@ -91,19 +92,14 @@
 </div>
 <!-- FOOTER -->
 
+<?php if (isset($_SESSION['pesan'])): ?>
 <script>
-
-    var pesanteks = "<?= $_SESSION['pesan'] ?? ''; ?>";
-
-    if (pesanteks != "") {
-        Swal.fire({
-            title: "Thanks",
-            text: pesanteks,
-            icon: "success"
-        });
-        unset($_SESSION['pesan']);
-    }
+    Swal.fire({
+        title: "Thanks",
+        text: "<?= $_SESSION['pesan']; ?>",
+        icon: "success"
+    });
 </script>
-
+<?php unset($_SESSION['pesan']); endif; ?>
 </body>
 </html>
